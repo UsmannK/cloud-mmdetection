@@ -223,8 +223,8 @@ data = dict(
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/val_annotations.json',
-        img_prefix=data_root + 'images/',
+        ann_file=data_root + 'annotations/test_annotations.json',
+        img_prefix=data_root + 'test_images/',
         pipeline=test_pipeline))
 # optimizer
 optimizer = dict(type='SGD', lr=0.005, momentum=0.9, weight_decay=0.0001)
