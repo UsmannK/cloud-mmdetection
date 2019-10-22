@@ -173,12 +173,6 @@ train_pipeline = [
     dict(
         type='Albu',
         transforms=albu_train_transforms,
-        bbox_params=dict(
-            type='BboxParams',
-            format='pascal_voc',
-            label_fields=['gt_labels'],
-            min_visibility=0.0,
-            filter_lost_elements=True),
         keymap={
             'img': 'image',
             'gt_masks': 'masks',
